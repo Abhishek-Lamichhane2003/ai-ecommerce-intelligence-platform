@@ -2,6 +2,16 @@
 
 A full-stack Data Science + Software Engineering portfolio project built on the Kaggle Online Shopping dataset.
 
+## Live Demo
+
+🌐 [View the live application](https://ai-ecommerce-intelligence-frontend.onrender.com/)
+
+## API
+
+The backend is built with FastAPI and deployed on Render.
+
+ [View API Documentation](https://ai-ecommerce-intelligence-platform-j2sv.onrender.com/docs)
+
 ## What it demonstrates
 
 - Data cleaning and feature engineering with Pandas
