@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+node_modules/
+frontend/dist/
+artifacts/
+backend/artifacts/
+data/ecommerce_sales.csv
