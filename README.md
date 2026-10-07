@@ -4,15 +4,12 @@ A full-stack Data Science + Software Engineering portfolio project built on the 
 
 ## What it demonstrates
 
-### Data Science
 - Data cleaning and feature engineering with Pandas
 - Revenue, product, location, coupon, and customer analytics
 - RFM-style customer features
 - K-Means customer segmentation
 - Silhouette-score evaluation
 - Natural-language analytics and text-to-SQL
-
-### Software Engineering
 - React frontend
 - FastAPI REST backend
 - SQLAlchemy database layer
@@ -25,25 +22,6 @@ A full-stack Data Science + Software Engineering portfolio project built on the 
 - Unit tests with pytest
 - Dockerized frontend/backend/database
 - GitHub Actions continuous integration
-
-## Architecture
-
-```text
-React Frontend
-      |
-      v
-FastAPI REST API
-   /      |       \
-Analytics ML    AI Analyst
-   |      |        |
-   +------|--------+
-          v
-   SQLAlchemy Database
-   SQLite / PostgreSQL
-          |
-          v
-Kaggle ecommerce_sales.csv
-```
 
 ## Pages
 
