@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from . import analytics
 from .ai_service import explain_result, generate_sql
 from .data import CommerceData, DatasetMissingError, load_commerce_data
+from .dataset_bootstrap import ensure_dataset
 from .database import (
     get_query_history,
     initialize_database,
@@ -27,11 +28,11 @@ from .settings import (
 
 state: dict[str, object] = {}
 
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     try:
-        data = load_commerce_data(DATA_FILE)
+        dataset_path = ensure_dataset()
+        data = load_commerce_data(dataset_path)
         engine = make_engine(DATABASE_URL)
         initialize_database(engine, data)
         state["data"] = data
